@@ -1,0 +1,23 @@
+                        <!-- Health Insurance -->
+                        <div class="col-md-4 position-relative">
+                            <div class="card overflow-hidden rounded-4 border-0 shadow hero-insurance-card">
+                                <img src="https://images.unsplash.com/photo-1516796181134-9cfeba6b2f71" class="hero-card-img" alt="Health Insurance" />
+                                <div class="hero-card-label bg-gradient-health">❤️ Health Insurance</div>
+                            </div>
+                        </div>
+
+                        <!-- Motor Insurance -->
+                        <div class="col-md-4 position-relative">
+                            <div class="card overflow-hidden rounded-4 border-0 shadow hero-insurance-card">
+                                <img src="https://images.unsplash.com/photo-1504457046788-2507f3ddffe8" class="hero-card-img" alt="Motor Insurance" />
+                                <div class="hero-card-label bg-gradient-motor">🚗 Motor Insurance</div>
+                            </div>
+                        </div>
+
+                        <!-- Home Insurance -->
+                        <div class="col-md-4 position-relative">
+                            <div class="card overflow-hidden rounded-4 border-0 shadow hero-insurance-card">
+                                <img src="https://images.unsplash.com/photo-1600195077074-df4ce973a231" class="hero-card-img" alt="Home Insurance" />
+                                <div class="hero-card-label bg-gradient-home">🛡️ Home Insurance</div>
+                            </div>
+                        </div>

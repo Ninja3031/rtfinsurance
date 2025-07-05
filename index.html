@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTF Insurance - Making Insurance Accessible, Valuable</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+
+
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+
+    <!-- 🟦 Top Bar (Header Strip) -->
+    <!-- Thin responsive strip with contact information and social media links -->
+    <div class="bg-gray-100 border-bottom">
+        <div class="container-fluid px-3 px-lg-5">
+            <div class="row align-items-center py-2">
+                <div class="col-12">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-sm">
+                        <!-- Left Side: Contact Information -->
+                        <div class="d-flex flex-column flex-sm-row align-items-center gap-3 mb-2 mb-md-0">
+                            <!-- Phone Number -->
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-phone text-blue-600 me-2"></i>
+                                <span class="text-gray-700 fw-medium">+1 (555) 123-4567</span>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-envelope text-blue-600 me-2"></i>
+                                <span class="text-gray-700 fw-medium">info@rtfinsurance.com</span>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-blue-600 me-2"></i>
+                                <span class="text-gray-700 fw-medium">New York City, USA</span>
+                            </div>
+                        </div>
+
+                        <!-- Right Side: Social Media Links -->
+                        <div class="d-flex align-items-center gap-3">
+                            <!-- Instagram -->
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover-text-pink transition-all">
+                                <i class="fab fa-instagram" style="font-size: 1.1rem;"></i>
+                            </a>
+
+                            <!-- Facebook -->
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover-text-blue transition-all">
+                                <i class="fab fa-facebook-f" style="font-size: 1.1rem;"></i>
+                            </a>
+
+                            <!-- Twitter -->
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover-text-blue-light transition-all">
+                                <i class="fab fa-twitter" style="font-size: 1.1rem;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🧭 Main Navigation Bar (Navbar) -->
+    <!-- Located below top bar, used for primary site navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-lg sticky-top border-bottom">
+        <div class="container-fluid px-3 px-lg-5">
+            <div class="d-flex align-items-center justify-content-between w-100">
+                <!-- Left Side: Company Logo/Brand -->
+                <a class="navbar-brand d-flex align-items-center me-4" href="#home">
+                    <img src="public/Screenshot 2025-07-05 at 10.51.38 AM.png" alt="RTF Insurance Logo" class="navbar-logo">
+                </a>
+
+                <!-- Mobile Hamburger Toggle Button -->
+                <button class="navbar-toggler border-0 shadow-none p-2 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- 📌 Navigation Links - Next to Logo -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-evenly align-items-center flex-lg-row">
+                        <!-- 1. Home - Takes user to main landing section -->
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold text-gray-700 px-4 py-2 mx-1 rounded transition-all hover-bg-gray hover-text-blue fs-7" href="#home">
+                                <i class="fas fa-home me-2 d-lg-none"></i>Home
+                            </a>
+                        </li>
+
+                        <!-- 2. Product - Scrolls to insurance products section -->
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold text-gray-700 px-4 py-2 mx-1 rounded transition-all hover-bg-gray hover-text-blue fs-7" href="#products">
+                                <i class="fas fa-box me-2 d-lg-none"></i>Product
+                            </a>
+                        </li>
+
+                        <!-- 3. Elements - UI features, tools, additional offerings -->
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold text-gray-700 px-4 py-2 mx-1 rounded transition-all hover-bg-gray hover-text-blue fs-7" href="#elements">
+                                <i class="fas fa-th-large me-2 d-lg-none"></i>Elements
+                            </a>
+                        </li>
+
+                        <!-- 4. Blog - News, articles, updates section -->
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold text-gray-700 px-4 py-2 mx-1 rounded transition-all hover-bg-gray hover-text-blue fs-7" href="#blog">
+                                <i class="fas fa-blog me-2 d-lg-none"></i>Blog
+                            </a>
+                        </li>
+
+                        <!-- 5. Login - User login page for customers/employees -->
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold text-gray-700 px-4 py-2 mx-1 rounded transition-all hover-bg-gray hover-text-blue fs-7" href="#login">
+                                <i class="fas fa-sign-in-alt me-2 d-lg-none"></i>Login
+                            </a>
+                        </li>
+
+                        <!-- 🔵 "Get a Quote" CTA Button - Visually distinct, encourages quote process -->
+                        <li class="nav-item ms-lg-3">
+                            <a class="btn btn-primary fw-semibold px-6 py-2 rounded-3 shadow-sm transition-all hover-shadow-md hover-transform hover-translate-y fs-7" href="#quote">
+                                <i class="fas fa-quote-right me-2"></i>Get a Quote
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. Hero Section -->
+    <section id="home" class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <!-- Left Column: Headline, Subtext, CTA Buttons -->
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-4">
+                        Your <span class="text-warning">Trusted</span> Insurance <span class="text-info">Partner</span>
+                    </h1>
+                    <p class="lead mb-4 fs-5">
+                        Making insurance accessible and valuable for everyone. Your protection is our lifetime commitment with comprehensive coverage solutions.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row gap-3">
+                        <a href="#products" class="btn btn-light btn-lg px-4 py-3 fw-semibold">
+                            <i class="fas fa-search me-2"></i>Explore Products
+                        </a>
+                        <a href="#about" class="btn btn-outline-light btn-lg px-4 py-3 fw-semibold">
+                            <i class="fas fa-info-circle me-2"></i>Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Responsive Insurance Category Cards -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="row g-4 justify-content-center">
+                        <!-- 4. Health Insurance Card -->
+                        <div class="col-4">
+                            <img src="public/Screenshot 2025-07-05 at 12.28.21 PM.png"
+                                 class="img-fluid rounded-3 w-100" alt="Health Insurance" style="object-fit: cover; height: 200px;">
+                        </div>
+
+                        <!-- 4. Home Insurance Card -->
+                        <div class="col-4">
+                            <img src="public/Screenshot 2025-07-05 at 12.28.28 PM.png"
+                                 class="img-fluid rounded-3 w-100" alt="Home Insurance" style="object-fit: cover; height: 200px;">
+                        </div>
+
+                        <!-- 4. Motor Insurance Card -->
+                        <div class="col-4">
+                            <img src="public/Screenshot 2025-07-05 at 12.28.36 PM.png"
+                                 class="img-fluid rounded-3 w-100" alt="Motor Insurance" style="object-fit: cover; height: 200px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insurance Products Section -->
+    <section id="products" class="py-5" style="background-color: #f8fafc;">
+        <div class="container">
+            <!-- Section Header with Badge and Title -->
+            <div class="text-center mb-5">
+                <!-- Pill-shaped Badge -->
+                <div class="mb-3">
+                    <span class="badge rounded-pill px-4 py-2 fs-6 fw-semibold" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                        <i class="fas fa-shield-alt me-2"></i>Our Services
+                    </span>
+                </div>
+
+                <!-- Main Heading -->
+                <h2 class="display-5 fw-bold mb-4" style="color: #1f2937;">Insurance Products</h2>
+
+                <!-- Descriptive Subtext -->
+                <p class="lead mx-auto" style="color: #6b7280; max-width: 600px;">
+                    Comprehensive coverage solutions designed to protect what matters most to you and your family
+                </p>
+            </div>
+
+            <!-- 3-Column Responsive Card Layout -->
+            <div class="row g-2 justify-content-center">
+                <!-- Health Insurance Card -->
+                <div class="col-lg-3 col-md-4 col-12 mb-3">
+                    <div class="card h-100 border-0 shadow-lg rounded-3 overflow-hidden product-card">
+                        <!-- Top Image (reduced height) -->
+                        <div class="card-img-container" style="height: 180px;">
+                            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=300&h=180&fit=crop&crop=center"
+                                 class="card-img-top w-100 h-100" alt="Health Insurance" style="object-fit: cover;">
+                        </div>
+
+                        <!-- White Card Body -->
+                        <div class="card-body bg-white p-2 text-center">
+                            <!-- Icon + Title -->
+                            <div class="mb-2">
+                                <i class="fas fa-heart text-danger mb-1" style="font-size: 1.5rem;"></i>
+                                <h5 class="card-title fw-bold mb-2" style="color: #1f2937; font-size: 1rem;">Health Insurance</h5>
+                            </div>
+
+                            <!-- Description Paragraph -->
+                            <p class="card-text mb-3" style="color: #6b7280; font-size: 0.8rem; line-height: 1.3;">
+                                Comprehensive medical coverage for you and your family with cashless treatment and wellness benefits.
+                            </p>
+
+                            <!-- Learn More Button -->
+                            <a href="#" class="btn btn-primary rounded-pill px-2 py-1 fw-semibold" style="font-size: 0.8rem;">
+                                Learn More <i class="fas fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Motor Insurance Card -->
+                <div class="col-lg-3 col-md-4 col-12 mb-3">
+                    <div class="card h-100 border-0 shadow-lg rounded-3 overflow-hidden product-card">
+                        <!-- Top Image (reduced height) -->
+                        <div class="card-img-container" style="height: 180px;">
+                            <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=300&h=180&fit=crop&crop=center"
+                                 class="card-img-top w-100 h-100" alt="Motor Insurance" style="object-fit: cover;">
+                        </div>
+
+                        <!-- White Card Body -->
+                        <div class="card-body bg-white p-2 text-center">
+                            <!-- Icon + Title -->
+                            <div class="mb-2">
+                                <i class="fas fa-car text-primary mb-1" style="font-size: 1.5rem;"></i>
+                                <h5 class="card-title fw-bold mb-2" style="color: #1f2937; font-size: 1rem;">Motor Insurance</h5>
+                            </div>
+
+                            <!-- Description Paragraph -->
+                            <p class="card-text mb-3" style="color: #6b7280; font-size: 0.8rem; line-height: 1.3;">
+                                Complete protection for your vehicle with comprehensive coverage and roadside assistance.
+                            </p>
+
+                            <!-- Learn More Button -->
+                            <a href="#" class="btn btn-primary rounded-pill px-2 py-1 fw-semibold" style="font-size: 0.8rem;">
+                                Learn More <i class="fas fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Life Insurance Card -->
+                <div class="col-lg-3 col-md-4 col-12 mb-3">
+                    <div class="card h-100 border-0 shadow-lg rounded-3 overflow-hidden product-card">
+                        <!-- Top Image (reduced height) -->
+                        <div class="card-img-container" style="height: 180px;">
+                            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=300&h=180&fit=crop&crop=center"
+                                 class="card-img-top w-100 h-100" alt="Life Insurance" style="object-fit: cover;">
+                        </div>
+
+                        <!-- White Card Body -->
+                        <div class="card-body bg-white p-2 text-center">
+                            <!-- Icon + Title -->
+                            <div class="mb-2">
+                                <i class="fas fa-shield-alt text-success mb-1" style="font-size: 1.5rem;"></i>
+                                <h5 class="card-title fw-bold mb-2" style="color: #1f2937; font-size: 1rem;">Life Insurance</h5>
+                            </div>
+
+                            <!-- Description Paragraph -->
+                            <p class="card-text mb-3" style="color: #6b7280; font-size: 0.8rem; line-height: 1.3;">
+                                Secure your family's financial future with comprehensive life insurance and investment plans.
+                            </p>
+
+                            <!-- Learn More Button -->
+                            <a href="#" class="btn btn-primary rounded-pill px-2 py-1 fw-semibold" style="font-size: 0.8rem;">
+                                Learn More <i class="fas fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose RTF Insurance - Horizontal Layout -->
+    <section class="py-5" style="background-color: #f8fafc;">
+        <div class="container">
+            <div class="row g-4 align-items-center justify-content-center">
+                <!-- Left Block: Why Choose RTF Insurance (Smaller) -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card border-0 shadow-md rounded-xl p-5 bg-white h-100">
+                        <h2 class="fw-bold mb-4" style="color: #1d4ed8; font-size: 2rem;">Why Choose RTF Insurance?</h2>
+                        
+                        <div class="d-flex flex-column gap-3">
+                            <!-- Expert Guidance -->
+                            <div class="d-flex align-items-start">
+                                <div class="flex-shrink-0 me-3">
+                                    <div class="rounded-circle p-2" style="background-color: #fef3c7;">
+                                        <i class="fas fa-user-tie text-warning" style="font-size: 1.2rem;"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1" style="color: #1f2937; font-size: 1rem;">Expert Guidance</h5>
+                                    <p class="text-gray-600 mb-0" style="font-size: 0.9rem;">Our experienced insurance advisors provide personalized recommendations tailored to your specific needs and budget.</p>
+                                </div>
+                            </div>
+
+                            <!-- 24/7 Support -->
+                            <div class="d-flex align-items-start">
+                                <div class="flex-shrink-0 me-3">
+                                    <div class="rounded-circle p-2" style="background-color: #fef3c7;">
+                                        <i class="fas fa-clock text-warning" style="font-size: 1.2rem;"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1" style="color: #1f2937; font-size: 1rem;">24/7 Support</h5>
+                                    <p class="text-gray-600 mb-0" style="font-size: 0.9rem;">Round-the-clock customer support to assist you whenever you need help with your insurance policies or claims.</p>
+                                </div>
+                            </div>
+
+                            <!-- Trusted Partners -->
+                            <div class="d-flex align-items-start">
+                                <div class="flex-shrink-0 me-3">
+                                    <div class="rounded-circle p-2" style="background-color: #fef3c7;">
+                                        <i class="fas fa-handshake text-warning" style="font-size: 1.2rem;"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1" style="color: #1f2937; font-size: 1rem;">Trusted Partners</h5>
+                                    <p class="text-gray-600 mb-0" style="font-size: 0.9rem;">We partner with leading insurance providers to offer you the best coverage options at competitive rates.</p>
+                                </div>
+                            </div>
+
+                            <!-- Simplified Process -->
+                            <div class="d-flex align-items-start">
+                                <div class="flex-shrink-0 me-3">
+                                    <div class="rounded-circle p-2" style="background-color: #fef3c7;">
+                                        <i class="fas fa-cogs text-warning" style="font-size: 1.2rem;"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1" style="color: #1f2937; font-size: 1rem;">Simplified Process</h5>
+                                    <p class="text-gray-600 mb-0" style="font-size: 0.9rem;">Easy online application process with digital documentation and instant policy issuance for most products.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Block: Visual Summary (Next to the first box) -->
+                <div class="col-lg-4 col-md-6 col-12 position-relative">
+                    <div class="text-center p-5 rounded-xl h-100 d-flex flex-column justify-content-center align-items-center" 
+                         style="background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);">
+                        
+                        <!-- Curved Arrow Connector -->
+                        <div class="position-absolute" style="left: -25px; top: 50%; transform: translateY(-50%); z-index: 10;">
+                            <svg width="50" height="30" viewBox="0 0 50 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 15 Q12 15 25 15 Q38 15 50 15" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M40 10 L50 15 L40 20" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+
+                        <!-- Shield Icon -->
+                        <div class="mb-3">
+                            <div class="rounded-circle p-3 d-inline-block" style="background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);">
+                                <i class="fas fa-shield-check text-white" style="font-size: 2.5rem;"></i>
+                            </div>
+                        </div>
+
+                        <!-- Title -->
+                        <h3 class="fw-bold mb-3" style="color: #1d4ed8; font-size: 1.8rem;">Your Protection, Our Promise</h3>
+                        
+                        <!-- Subtext -->
+                        <p class="text-gray-600 mb-0" style="font-size: 1rem; max-width: 300px;">
+                            Dedicated to safeguarding what matters most to you with comprehensive coverage and unwavering commitment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section class="py-5" style="background-color: #FFECEC;">
+        <div class="container">
+            <!-- Header Section -->
+            <div class="text-center mb-5">
+                <h1 class="display-6 fw-bold text-primary mb-4">Glimpses of our -</h1>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <button class="btn btn-warning rounded-pill px-4 py-2 fw-semibold" onclick="showContent('eb-portal')">
+                        <i class="fas fa-globe me-2"></i>E.B Portal
+                    </button>
+                    <button class="btn btn-warning rounded-pill px-4 py-2 fw-semibold" onclick="showContent('employee-app')">
+                        <i class="fas fa-mobile-alt me-2"></i>Employee App
+                    </button>
+                </div>
+            </div>
+
+            <!-- Main Dashboard Layout -->
+            <div class="row g-4">
+                <!-- Left Sidebar Menu -->
+                <div class="col-lg-5 col-md-6 col-12">
+                    <div class="d-flex flex-column gap-3">
+                        <!-- Navigation Arrows -->
+                        <div class="text-center mb-3">
+                            <button class="btn btn-light btn-sm rounded-circle me-2">
+                                <i class="fas fa-chevron-up"></i>
+                            </button>
+                            <button class="btn btn-light btn-sm rounded-circle">
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <!-- Menu Items -->
+                        <div class="d-flex flex-column gap-2">
+                            <button class="btn btn-primary text-start p-3 rounded-3" onclick="showContent('hr-dashboard')">
+                                <i class="fas fa-chart-line me-3"></i>
+                                <span class="fw-semibold">HR Dashboard</span>
+                            </button>
+                            
+                            <button class="btn btn-outline-primary text-start p-3 rounded-3" onclick="showContent('claim-list')">
+                                <i class="fas fa-file-alt me-3"></i>
+                                <span class="fw-semibold">Claim List</span>
+                            </button>
+                            
+                            <button class="btn btn-outline-primary text-start p-3 rounded-3" onclick="showContent('policy-list')">
+                                <i class="fas fa-shield-alt me-3"></i>
+                                <span class="fw-semibold">Policy List</span>
+                            </button>
+                            
+                            <button class="btn btn-outline-primary text-start p-3 rounded-3" onclick="showContent('monthly-reporting')">
+                                <i class="fas fa-chart-bar me-3"></i>
+                                <span class="fw-semibold">Monthly Reporting</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Dashboard View -->
+                <div class="col-lg-7 col-md-6 col-12">
+                    <!-- HR Dashboard Content -->
+                    <div class="dashboard-content" id="hr-dashboard" style="display: block;">
+                        <div class="card shadow-sm rounded-4 border-0 h-100" style="background-color: #FFA54D;">
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h4 class="fw-bold text-white mb-4">HR Dashboard Overview</h4>
+                                    <div class="rounded-3 p-4" style="background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 100%);">
+                                        <i class="fas fa-chart-pie text-white mb-3" style="font-size: 3rem;"></i>
+                                        <p class="text-white mb-0">Employee Analytics & Performance</p>
+                                        <small class="text-white-50">Real-time HR metrics and insights</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Claim List Content -->
+                    <div class="dashboard-content" id="claim-list" style="display: none;">
+                        <div class="card shadow-sm rounded-4 border-0 h-100" style="background-color: #28a745;">
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold text-white mb-4">Claim Management System</h4>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="bg-white rounded-3 p-3">
+                                            <h6 class="fw-bold text-success mb-2">Recent Claims</h6>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>Health Claims</span>
+                                                <span class="badge bg-success">24</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>Motor Claims</span>
+                                                <span class="badge bg-warning">12</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>Life Claims</span>
+                                                <span class="badge bg-info">8</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="bg-white rounded-3 p-3">
+                                            <h6 class="fw-bold text-success mb-2">Status Overview</h6>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>Approved</span>
+                                                <span class="badge bg-success">85%</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>Pending</span>
+                                                <span class="badge bg-warning">12%</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>Rejected</span>
+                                                <span class="badge bg-danger">3%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Policy List Content -->
+                    <div class="dashboard-content" id="policy-list" style="display: none;">
+                        <div class="card shadow-sm rounded-4 border-0 h-100" style="background-color: #6f42c1;">
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold text-white mb-4">Policy Management</h4>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="bg-white rounded-3 p-3">
+                                            <h6 class="fw-bold text-purple mb-2">Active Policies</h6>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>Health Insurance</span>
+                                                <span class="badge bg-primary">1,234</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>Motor Insurance</span>
+                                                <span class="badge bg-info">856</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>Life Insurance</span>
+                                                <span class="badge bg-success">432</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="bg-white rounded-3 p-3">
+                                            <h6 class="fw-bold text-purple mb-2">Policy Status</h6>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>Active</span>
+                                                <span class="badge bg-success">92%</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>Expiring Soon</span>
+                                                <span class="badge bg-warning">6%</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>Expired</span>
+                                                <span class="badge bg-danger">2%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Monthly Reporting Content -->
+                    <div class="dashboard-content" id="monthly-reporting" style="display: none;">
+                        <div class="card shadow-sm rounded-4 border-0 h-100" style="background-color: #fd7e14;">
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold text-white mb-4">Monthly Analytics Report</h4>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="bg-white rounded-3 p-3">
+                                            <h6 class="fw-bold text-warning mb-2">Revenue Overview</h6>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>Total Revenue</span>
+                                                <span class="fw-bold text-success">₹2.5M</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>Growth Rate</span>
+                                                <span class="badge bg-success">+15%</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>New Policies</span>
+                                                <span class="badge bg-info">+89</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="bg-white rounded-3 p-3">
+                                            <h6 class="fw-bold text-warning mb-2">Performance Metrics</h6>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>Customer Satisfaction</span>
+                                                <span class="badge bg-success">4.8/5</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>Claim Settlement</span>
+                                                <span class="badge bg-success">97%</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>Response Time</span>
+                                                <span class="badge bg-info">2.3 hrs</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- E.B Portal Content -->
+                    <div class="dashboard-content" id="eb-portal" style="display: none;">
+                        <div class="card shadow-sm rounded-4 border-0 h-100" style="background-color: #17a2b8;">
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold text-white mb-4">E.B Portal - Employee Benefits</h4>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="bg-white rounded-3 p-3">
+                                            <h6 class="fw-bold text-info mb-2">Portal Features</h6>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>
+                                                <span>Policy Management</span>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>
+                                                <span>Claim Submission</span>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fas fa-check-circle text-success me-2"></i>
+                                                <span>Document Upload</span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-check-circle text-success me-2"></i>
+                                                <span>Real-time Tracking</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="bg-white rounded-3 p-3">
+                                            <h6 class="fw-bold text-info mb-2">Portal Statistics</h6>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>Active Users</span>
+                                                <span class="badge bg-info">2,847</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>Daily Logins</span>
+                                                <span class="badge bg-success">1,234</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>Uptime</span>
+                                                <span class="badge bg-success">99.9%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Employee App Content -->
+                    <div class="dashboard-content" id="employee-app" style="display: none;">
+                        <div class="card shadow-sm rounded-4 border-0 h-100" style="background-color: #e83e8c;">
+                            <div class="card-body p-4">
+                                <h4 class="fw-bold text-white mb-4">Employee Mobile App</h4>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="bg-white rounded-3 p-3">
+                                            <h6 class="fw-bold text-pink mb-2">App Features</h6>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fas fa-mobile-alt text-pink me-2"></i>
+                                                <span>Push Notifications</span>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fas fa-camera text-pink me-2"></i>
+                                                <span>Photo Claims</span>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <i class="fas fa-map-marker-alt text-pink me-2"></i>
+                                                <span>Location Services</span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <i class="fas fa-chat text-pink me-2"></i>
+                                                <span>Live Chat Support</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="bg-white rounded-3 p-3">
+                                            <h6 class="fw-bold text-pink mb-2">App Performance</h6>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>Downloads</span>
+                                                <span class="badge bg-pink">15.2K</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>Rating</span>
+                                                <span class="badge bg-success">4.7★</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span>Active Sessions</span>
+                                                <span class="badge bg-info">8.9K</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Call-to-Action Section -->
+    <section id="quote" class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">Ready to Get Protected?</h2>
+                    <p class="lead mb-5">Take the first step towards securing your future. Get a personalized
+                                            insurance quote in just minutes and discover how affordable protection can be
+                                        be
+                    </p>
+                    <a href="#" class="btn btn-light btn-lg px-5 py-3 rounded-lg fw-medium mb-5">
+                        Get Free Quote
+                    </a>
+
+                    <div class="row g-4 mt-5">
+                        <div class="col-md-3 col-6">
+                            <div class="text-center">
+                                <i class="fas fa-phone mb-2" style="font-size: 1.5rem;"></i>
+                                <p class="mb-0 small">Call Us</p>
+                                <p class="fw-bold">1800-123-4567</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="text-center">
+                                <i class="fas fa-envelope mb-2" style="font-size: 1.5rem;"></i>
+                                <p class="mb-0 small">Email Us</p>
+                                <p class="fw-bold">info@rtfinsurance.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="text-center">
+                                <i class="fas fa-map-marker-alt mb-2" style="font-size: 1.5rem;"></i>
+                                <p class="mb-0 small">Visit Us</p>
+                                <p class="fw-bold">Mumbai, India</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <div class="text-center">
+                                <i class="fas fa-clock mb-2" style="font-size: 1.5rem;"></i>
+                                <p class="mb-0 small">Available</p>
+                                <p class="fw-bold">24/7 Support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container">
+            <div class="row g-5">
+                <!-- RTF Care Products -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4">RTF Care Products</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover-text-white text-decoration-none">Health Insurance</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover-text-white text-decoration-none">Critical Illness</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover-text-white text-decoration-none">Personal Accident</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover-text-white text-decoration-none">OPD Coverage</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover-text-white text-decoration-none">Wellness Programs</a></li>
+                    </ul>
+                </div>
+
+                <!-- RTF Business Insurance -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4">RTF Business Insurance</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover-text-white text-decoration-none">Group Health</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover-text-white text-decoration-none">Group Life</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover-text-white text-decoration-none">Commercial Vehicle</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover-text-white text-decoration-none">Property Insurance</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover-text-white text-decoration-none">Liability Coverage</a></li>
+                    </ul>
+                </div>
+
+                <!-- About Us & Policies -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4">About Us & Policies</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover-text-white text-decoration-none">About RTF Insurance</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover-text-white text-decoration-none">Our Mission</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover-text-white text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover-text-white text-decoration-none">Terms & Conditions</a></li>
+                        <li class="mb-2"><a href="#" class="text-gray-300 hover-text-white text-decoration-none">Accessibility</a></li>
+                    </ul>
+                </div>
+
+                <!-- App Download & Contact -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4">Get Our App</h5>
+                    <div class="mb-4">
+                        <a href="#" class="d-inline-block mb-2 me-2">
+                            <img src="https://via.placeholder.com/120x40/000000/FFFFFF?text=App+Store" alt="Download on App Store" class="rounded">
+                        </a>
+                        <a href="#" class="d-inline-block mb-2">
+                            <img src="https://via.placeholder.com/120x40/000000/FFFFFF?text=Google+Play" alt="Get it on Google Play" class="rounded">
+                        </a>
+                    </div>
+
+                    <h6 class="fw-bold mb-3">Follow Us</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-gray-300 hover-text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-300 hover-text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover-text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-300 hover-text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-5 border-gray-700">
+
+            <!-- Social Proof & Copyright -->
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-2 fw-bold text-blue-400">Trusted by Leading Companies</p>
+                    <p class="mb-0 text-gray-400 small">© 2024 RTF Insurance. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                    <div class="d-flex flex-wrap justify-content-md-end gap-3">
+                        <a href="#" class="text-gray-400 hover-text-white text-decoration-none small">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover-text-white text-decoration-none small">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover-text-white text-decoration-none small">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript for smooth scrolling -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        function showContent(contentId) {
+            // Hide all dashboard content
+            const allContent = document.querySelectorAll('.dashboard-content');
+            allContent.forEach(content => {
+                content.style.display = 'none';
+            });
+            
+            // Show selected content
+            const selectedContent = document.getElementById(contentId);
+            if (selectedContent) {
+                selectedContent.style.display = 'block';
+            }
+            
+            // Update menu button states
+            const allMenuButtons = document.querySelectorAll('.btn-outline-primary, .btn-primary');
+            allMenuButtons.forEach(btn => {
+                btn.classList.remove('btn-primary');
+                btn.classList.add('btn-outline-primary');
+            });
+            
+            // Update clicked button
+            event.target.closest('button').classList.remove('btn-outline-primary');
+            event.target.closest('button').classList.add('btn-primary');
+        }
+    </script>
+</body>
+</html>
